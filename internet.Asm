@@ -24,8 +24,6 @@ DlgProc proc hWin:HWND,uMsg:UINT,wParam:WPARAM,lParam:LPARAM
 
 	.elseif eax==WM_COMMAND
       .if wParam==1001
-      ;invoke GetDlgItem,hWin,1003
-      ;mov hh,eax
       invoke GetDlgItemText,hWin,1003,offset host,sizeof host
       invoke InternetOpen,addr ag,INTERNET_OPEN_TYPE_PRECONFIG,NULL,NULL,0
       mov hopen,eax
