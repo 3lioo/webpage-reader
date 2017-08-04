@@ -24,7 +24,6 @@ hcon dd ?
 hInstance			dd ?
 bytesread dd ?
 htext dd ?
-hh dd ?
 .data
 ag db "asm is cool",0
 msg db "something wrong",0
